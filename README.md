@@ -35,10 +35,9 @@ Reconciles and links a contact based on provided email and/or phone number.
   "email": "doc@flux.com",
   "phoneNumber": "123456"
 }
+```
 
---- 
-
-######## #### ✅ Response:
+#### ✅ Response:
 ```json
 {
   "contact": {
@@ -48,13 +47,23 @@ Reconciles and links a contact based on provided email and/or phone number.
     "secondaryContactIds": []
   }
 }
+```
 
-##### 🧪 Running Locally
+---
+
+## 🧪 Running Locally
+
+```bash
 git clone https://github.com/irondivit/Bitespeed-Task.git
 cd Bitespeed-Task
 npm install
 npx prisma generate
 npx prisma migrate dev --name init
 npm run dev
+```
 
-npx prisma studio , use this to inspect the database.
+To inspect the database visually, run:
+
+```bash
+npx prisma studio
+```
